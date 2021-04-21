@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script defer src="./app.js" ></script>
+    <link rel="shortcut icon" href="#">
+    <title>todo App</title>
+</head>
+<body>
+    
+
+<h1 class="title" >Todo App Pro</h1>
+
+<div class="all-tasks">
+
+<h2 class="class-list-title">My lists</h2>
+<ul class="task-list" data-lists > 
+<!-- <li class="list-name active-list" >YouTube</li>
+<li class="list-name " >Work</li>
+<li class="list-name " >Grocery</li> -->
+</ul>
+
+<form action="" data-new-list-form >
+    <input type="text"
+    data-new-list-input
+    class="new list"
+    placeholder="new list name"
+    aria-label="new list name"
+    >
+    <button 
+    class="btn create"  
+    aria-label="create new list"
+    >+</button>
+</form>
+</div>
+
+
+<div class="todo-list" data-list-display-container >
+    <div class="todo-header">
+        <h2 class="list-title" data-list-title ></h2>
+        <p class="task-count" data-list-count ></p>
+    </div>
+    <div class="todo-body">
+        <div class="tasks" data-tasks >
+        </div>
+        <div class="new-task-creator">
+
+            <form action="" data-new-task-form >
+                <input type="text"
+                data-new-task-input
+                class="new list"
+                placeholder="new task name"
+                aria-label="new task name"
+                >
+                <button 
+                class="btn create"  
+                aria-label="create new task"
+                >+</button>
+            </form>
+
+        </div>
+        <div class="delete-stuff">
+<button class="btn delete" data-clear-complete-tasks-button >Clear completed tasks</button>
+<button class="btn delete" data-delete-list-button >Delete list</button>
+        </div>
+    </div>
+</div>
+
+<template id="task-template" >
+    <div class="task">
+        <input type="checkbox" 
+        >
+        <label>
+            <span class="custom-checkbox" ></span>
+        </label>
+    </div>
+</template>
+
+</body>
+</html>
